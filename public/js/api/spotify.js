@@ -1,4 +1,4 @@
-const getUserData = (accessToken) => {
+const getArtist = (accessToken, q) => {
   return fetch(`https://api.spotify.com/v1/me`, {
       headers: {
         'Authorization': `Bearer ${accessToken}`
@@ -7,5 +7,5 @@ const getUserData = (accessToken) => {
 };
 
 export default {
-  getUserData
+  getArtist
 }
