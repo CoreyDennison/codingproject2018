@@ -23,6 +23,6 @@ if (!access_token || (state == null || state !== storedState)) {
 }
 
 
-function barFunc() {
+document.function barFunc() {
     console.log("test");
 }
