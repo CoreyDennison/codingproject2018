@@ -24,6 +24,5 @@ if (!access_token || (state == null || state !== storedState)) {
 
 
 function barFunc() {
-    var text = document.getElementById("artist1").value;
-    document.getElementById("test").innerHTML = text;
+    console.log("test");
 }
