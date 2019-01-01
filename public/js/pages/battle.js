@@ -1,4 +1,4 @@
-import SpotifyAPI from "../api/spotify.js";
+/*import SpotifyAPI from "../api/spotify.js";
 import {getHashParams} from "../helpers/url.js";
 import {STATE_KEY} from "../helpers/constants.js";
 
@@ -6,8 +6,8 @@ const USER_PROFILE = document.getElementById('user-profile');
 const {access_token, state} = getHashParams();
 const storedState = localStorage.getItem(STATE_KEY);
 
-const artist1Data;
-const artist2Data;
+//const artist1Data;
+//const artist2Data;
 
 if (!access_token || (state == null || state !== storedState)) {
   window.location = "/";
@@ -21,8 +21,8 @@ if (!access_token || (state == null || state !== storedState)) {
     console.log(data);
   });
 }
+*/
 
-
-document.function barFunc() {
+function barFunc() {
     console.log("test");
 }
