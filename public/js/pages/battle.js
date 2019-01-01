@@ -6,8 +6,8 @@ const USER_PROFILE = document.getElementById('user-profile');
 const {access_token, state} = getHashParams();
 const storedState = localStorage.getItem(STATE_KEY);
 
-//const artist1Data;
-//const artist2Data;
+const artist1Data;
+const artist2Data;
 
 if (!access_token || (state == null || state !== storedState)) {
   window.location = "/";
@@ -21,8 +21,9 @@ if (!access_token || (state == null || state !== storedState)) {
     console.log(data);
   });
 }
-*/
 
+*/
 function barFunc() {
-    console.log("test");
+    var text = document.getElementById("artist1").value;
+    document.getElementById("test").innerHTML = text;
 }
