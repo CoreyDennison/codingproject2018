@@ -6,9 +6,6 @@ const USER_PROFILE = document.getElementById('user-profile');
 const {access_token, state} = getHashParams();
 const storedState = localStorage.getItem(STATE_KEY);
 
-const artist1Data;
-const artist2Data;
-
 if (!access_token || (state == null || state !== storedState)) {
   window.location = "/";
 } else {
@@ -23,9 +20,15 @@ if (!access_token || (state == null || state !== storedState)) {
 }
 
 */
-function barFunc() {
+function battleFunc() {
     var text = document.getElementById("artist1").value;
     var text2 = document.getElementById("artist2").value;
-    document.getElementById("test").innerHTML = text;
-    document.getElementById("test2").innerHTML = text2;
+    document.getElementById("info1").innerHTML = text;
+    document.getElementById("info2").innerHTML = text2;
+}
+
+function enterFunc() {
+  if (event.keyCode === 13) {
+    document.getElementById("battleButton").click();
+  }
 }

@@ -30,20 +30,27 @@ body {
 	left: 500px;
 }
 
-#info1 {
-	color: white;
-	font-size: 50px;
+button {
+	background-color: white;
+	padding:5px 10px;
 	position: absolute;
 	top: 170px;
+	left: 490px; 
+}
+
+#info1 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 250px;
 	left: 100px; 
 }
 
-#test {
+#info2 {
 	color: white;
-	font-size: 50px;
+	font-size: 20px;
+	position: absolute;
+	top: 250px;
+	right: 100px; 
 }
 
-#test2 {
-	color: white;
-	font-size: 50px;
-}
