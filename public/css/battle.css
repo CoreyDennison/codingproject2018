@@ -54,3 +54,11 @@ button {
 	right: 100px; 
 }
 
+#jsonBtn {
+	background-color: white;
+	padding:5px 10px;
+	position: absolute;
+	top: 350px;
+	left: 100px; 
+}
+

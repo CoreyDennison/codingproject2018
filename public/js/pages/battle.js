@@ -32,3 +32,13 @@ function enterFunc() {
     document.getElementById("battleButton").click();
   }
 }
+
+
+//load and print artists.json
+function loadJSON() {
+  fetch("artists.json")
+  .then(function(response){
+    console.log(response);
+  })
+
+}
