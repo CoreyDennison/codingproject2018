@@ -36,7 +36,7 @@ function enterFunc() {
 
 //load and print artists.json
 function loadJSON() {
-  fetch("artists.json")
+  fetch("../artists.json")
   .then(function(response){
     console.log(response);
   })
