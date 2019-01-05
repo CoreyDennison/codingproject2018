@@ -41,6 +41,12 @@ function loadJSON() {
     return response.json();
   })
   .then(function(data){
-    console.log(data);
+    let html = "";
+    data.forEach(function(artists){
+      html += `
+        <li>${artists.name}</li>
+      `;
+    });
+    document.getElementById("result").innerHTML = html;
   })
 }

@@ -62,3 +62,10 @@ button {
 	left: 100px; 
 }
 
+#result {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 500px;
+	right: 100px;
+}
