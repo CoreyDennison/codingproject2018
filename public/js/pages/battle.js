@@ -42,7 +42,7 @@ function loadJSON() {
   })
   .then(function(data){
     let html = "";
-    data.forEach(function(artists){
+    Object.key(artists)forEach(function(artists){
       html += `
         <li>${artists.name}</li>
       `;
