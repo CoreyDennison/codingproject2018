@@ -41,12 +41,11 @@ function loadJSON() {
     return response.json();
   })
   .then(function(data){
-    let html = "";
-    for (let i = 0; i < artists.length; i++){
-      html += `
-        <li>${artist.name}</li>
-      `;
+    var html = '';
+    for (let i = 0; i < artists.length; i++) {
+      return(artists[i].name)
      }
+
     });
-    document.getElementById("result").innerHTML = html;
-  }
+
+}
