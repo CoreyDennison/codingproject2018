@@ -47,7 +47,5 @@ function loadJSON() {
         <li>${artist.name}</li>
       `;
      }
-    });
-    document.getElementById("result").innerHTML = html;
-  }
+   });
 }
