@@ -42,7 +42,7 @@ function loadJSON() {
   })
   .then(function(data){
     let html = "";
-    Array.prototype.data.forEach.call(node.childNodes, function(artist){
+    for (var i = 0; i < artists.length; i++) {
       html += `
         <li>${artist.name}</li>
       `;
