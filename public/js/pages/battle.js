@@ -49,5 +49,5 @@ function loadJSON() {
      }
     });
     document.getElementById("result").innerHTML = html;
-  })
+  }
 }
