@@ -42,11 +42,12 @@ function loadJSON() {
   })
   .then(function(data){
     let html = "";
-    for (var i = 0; i < artists.length; i++) {
+    for (let i = 0; i < artists.length; i++){
       html += `
         <li>${artist.name}</li>
       `;
-    }
+     }
+    });
     document.getElementById("result").innerHTML = html;
   })
 }
