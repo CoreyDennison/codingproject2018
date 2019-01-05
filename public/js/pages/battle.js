@@ -46,7 +46,7 @@ function loadJSON() {
       html += `
         <li>${artist.name}</li>
       `;
-    });
+    }
     document.getElementById("result").innerHTML = html;
   })
 }
