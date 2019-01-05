@@ -42,9 +42,9 @@ function loadJSON() {
   })
   .then(function(data){
     let html = "";
-    Object.key(artists).forEach(function(artists){
+    Object.key(artists).forEach(function(artist){
       html += `
-        <li>${artists.name}</li>
+        <li>${artist.name}</li>
       `;
     });
     document.getElementById("result").innerHTML = html;
