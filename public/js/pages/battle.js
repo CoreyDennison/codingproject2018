@@ -38,7 +38,15 @@ function enterFunc() {
 function loadJSON() {
   fetch("../employees.json")
   .then(function(response){
-    console.log(response);
+    return response.json();
   })
-
+   .then(function(data){
+      let html = '';
+      data.forEach(function(employee){
+        html += `
+          <li>${employee.name} ${employee.job}</li>
+        `;
+      });
+      document.getElementById("result").innerHTML = html;
+   })
 }
