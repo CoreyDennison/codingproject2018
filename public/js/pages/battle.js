@@ -53,5 +53,4 @@ function loadJSON() {
    })
 }
 
-function getEmpInfo1()
  
