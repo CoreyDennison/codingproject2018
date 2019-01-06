@@ -25,6 +25,8 @@ function battleFunc() {
     var text2 = document.getElementById("artist2").value;
     document.getElementById("info1").innerHTML = text;
     document.getElementById("info2").innerHTML = text2;
+    document.getElementById("artist1").value = "";
+    document.getElementById("artist2").value = "";
 }
 
 function enterFunc() {
@@ -36,17 +38,20 @@ function enterFunc() {
 
 //load and print artists.json (Run on server)
 function loadJSON() {
-  fetch("../employees.json")
+  fetch("../artists(1).json")
   .then(function(response){
     return response.json();
   })
    .then(function(data){
       let html = '';
-      data.forEach(function(employee){
+      data.forEach(function(artist){
         html += `
-          <li>${employee.name} ${employee.job}</li>
+          <li>${artist.name}</li>
         `;
       });
       document.getElementById("result").innerHTML = html;
    })
 }
+
+function getEmpInfo1()
+ 
