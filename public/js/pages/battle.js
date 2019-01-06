@@ -36,16 +36,9 @@ function enterFunc() {
 
 //load and print artists.json (Run on server)
 function loadJSON() {
-  fetch("../artists.json")
+  fetch("../employees.json")
   .then(function(response){
-    return response.json();
+    console.log(response);
   })
-  .then(function(data){
-    var html = '';
-    for (let i = 0; i < artists.length; i++) {
-      return(artists[i].name)
-     }
-
-    });
 
 }
