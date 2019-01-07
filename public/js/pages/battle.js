@@ -38,6 +38,9 @@ function enterFunc() {
 //load and print artists.json (Run on server)
 function loadJSON() {
   fetch("../artists(1).json")
+  .then(function(response){
+    return response.json();
+  })
    .then(function(data){
       let html = '';
       data.forEach(function(artist){
@@ -50,6 +53,6 @@ function loadJSON() {
 }
 
 function matchData(){
-
+  
 }
  
