@@ -60,10 +60,8 @@ function matchData(){
    .then(function(data){
     data.forEach(function(artist){
       var getInfo1 = document.getElementById("artist1").value;
-      document.getElementById("info1").innerHTML = artist.map[getInfo1];
-
     });
-
+    document.getElementById("info1").innerHTML = artist.map[getInfo1];
    })
 }
  
