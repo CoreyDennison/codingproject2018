@@ -51,7 +51,7 @@ function loadJSON() {
       document.getElementById("result").innerHTML = html;
    })
 }
-
+/*
 function matchData(){
   fetch("../artists(1).json")
   .then(function(response){
@@ -64,4 +64,4 @@ function matchData(){
     document.getElementById("info1").innerHTML = .map[getInfo1];
    })
 }
- 
+ */
