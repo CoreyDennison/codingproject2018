@@ -53,6 +53,17 @@ function loadJSON() {
 }
 
 function matchData(){
-  
+  fetch("../artists(1).json")
+  .then(function(response){
+    return response.json();
+  })
+   .then(function(data){
+    data.forEach(function(artist){
+      var getInfo1 = document.getElementById("artist1").value;
+      document.getElementById("info1").innerHTML = artist[getInfo1]
+
+    });
+
+   })
 }
  

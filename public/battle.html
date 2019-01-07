@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Spotify Artist Battle</title>
-    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
 
     <link rel="stylesheet" type="text/css" href="../css/battle.css">
     <link rel='stylesheet' type='text/css' href='../css/reset.css'>
@@ -15,13 +14,13 @@
   </head>
   <body>
 
-  		<input type="text" class="inputs" id="artist1" onKeyPress="enterFunc()"> 
-  		<input type="text" class="inputs" id="artist2" onKeyPress="enterFunc()"> 
+  		<input type="text" class="inputs" id="artist1" onKeyPress="enterFunc()" placeholder="Enter first artist"> 
+  		<input type="text" class="inputs" id="artist2" onKeyPress="enterFunc()" placeholder="Enter second artist"> 
 
 
   	<p id="vs">VS</p>
 
-    <button id="battleButton" onClick = "battleFunc()">Battle</button>
+    <button id="battleButton" onClick = "matchData()">Battle</button>
 
   	<div id="info1">
   	</div>
@@ -29,13 +28,10 @@
   	<div id="info2">
   	</div>
 
-    <button id="jsonBtn" onClick="loadJSON()">JSON</button>
+    <!--<button id="jsonBtn" onClick="loadJSON()">JSON</button>
 
     <div id="result">
-    </div>
+    </div>-->
 
-    <!--<div class="container">
-    <div id="user-profile"></div>
-    <script type="module" src="js/pages/battle.js"></script>-->
   </body>
 </html>
