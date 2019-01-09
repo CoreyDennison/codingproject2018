@@ -57,13 +57,13 @@ function makeArray() {
       if (json.hasOwnProperty(value)) {
           var item = json[value];
           artists.push({
-              item.name
+              name: item.name
           });            
       }
   }
     /*converts name from object to string, but shows data
      as "[{"name":"Drake"},{"name":"Eminem"}, etc, etc..."*/
     var newArtists = JSON.stringify(artists);
-    document.getElementById("result").innerHTML = newArtists;
+    document.getElementById("result").innerHTML = newArtists[0];
   });
 }
