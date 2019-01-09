@@ -60,7 +60,8 @@ function makeArray() {
               name: item.name,
               popularity: item.popularity,
               followers: item.followers.total,
-              type: item.type
+              type: item.type,
+              genres: item.genres
           });            
       }
   }
