@@ -61,7 +61,8 @@ function makeArray() {
               popularity: item.popularity,
               followers: item.followers.total,
               type: item.type,
-              genres: item.genres
+              genres: item.genres,
+              images: item.images
           });            
       }
   }
