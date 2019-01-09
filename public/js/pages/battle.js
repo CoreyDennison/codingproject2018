@@ -61,9 +61,7 @@ function makeArray() {
           });            
       }
   }
-    /*converts name from object to string, but shows data
-     as "[{"name":"Drake"},{"name":"Eminem"}, etc, etc..."*/
-    var newArtists = JSON.stringify(artists);
-    document.getElementById("result").innerHTML = newArtists[0];
+
+    document.getElementById("result").innerHTML = artists[0];
   });
 }
