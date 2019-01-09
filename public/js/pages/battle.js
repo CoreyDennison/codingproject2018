@@ -57,7 +57,7 @@ function makeArray() {
       if (json.hasOwnProperty(value)) {
           var item = json[value];
           artists.push({
-              name: item.name
+              item.name
           });            
       }
   }
