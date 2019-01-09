@@ -51,7 +51,7 @@ function loadJSON() {
       document.getElementById("result").innerHTML = html;
    })
 }
-
+/*
 function matchData(){
   fetch("../artists(1).json")
   .then(function(response){
@@ -61,19 +61,19 @@ function matchData(){
     data.forEach(function(artist){
       var getInfo1 = document.getElementById("artist1").value;
     });
-    document.getElementById("info1").innerHTML = .;
+    document.getElementById("info1").innerHTML = ;
    })
 }
-
+*/
 //Create Javascript array from array in artists(1).json
-function makeArray(){
+function makeArray() {
   $.getJSON('../artists(1).json', function (json) {
   var artists = [];
   for (var key in json) {
       if (json.hasOwnProperty(key)) {
           var item = json[key];
           artists.push({
-              name: item.name,
+              name: item.name
           });            
       }
   }
