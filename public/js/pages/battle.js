@@ -59,7 +59,8 @@ function makeArray() {
           artists.push({
               name: item.name,
               popularity: item.popularity,
-              followers: item.followers.total
+              followers: item.followers.total,
+              type: item.type
           });            
       }
   }
