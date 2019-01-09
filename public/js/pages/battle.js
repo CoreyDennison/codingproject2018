@@ -62,6 +62,6 @@ function makeArray() {
       }
   }
 
-    document.getElementById("result").innerHTML = artists[0];
+    document.getElementById("result").innerHTML = artists[0].toString();
   });
 }
