@@ -53,15 +53,19 @@ function matchData(){
 function makeArray() {
   $.getJSON('../artists(1).json', function (json) {
   var artists = [];
-  for (var value in json) {
-      if (json.hasOwnProperty(value)) {
-          var item = json[value];
+  for (var key in json) {
+      if (json.hasOwnProperty(key)) {
+          var item = json[key];
           artists.push({
-              name: item.name
+              name: item.name,
+              url: item.url,
+              popularity: item.popularity,
+              type: item.type,
+              genres: items.genres
           });            
       }
   }
-
-    document.getElementById("result").innerHTML = artists[0].toString();
+    var newArtists = JSON.stringify(artists);
+    document.getElementById("result").innerHTML = newArtists;
   });
 }
