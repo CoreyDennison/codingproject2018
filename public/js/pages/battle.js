@@ -58,10 +58,6 @@ function makeArray() {
           var item = json[key];
           artists.push({
               name: item.name,
-              url: item.url,
-              popularity: item.popularity,
-              type: item.type,
-              genres: items.genres
           });            
       }
   }
