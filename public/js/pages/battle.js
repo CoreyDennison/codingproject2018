@@ -57,6 +57,9 @@ function makeArray() {
       if (json.hasOwnProperty(key)) {
           var item = json[key];
           artists.push({
+              /*pushes each object with the key 'name' 
+              and its value in artists(1).json to 
+              JavaScript artists array*/ 
               name: item.name,
               popularity: item.popularity,
               followers: item.followers.total,
