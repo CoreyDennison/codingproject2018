@@ -18,8 +18,8 @@ if (!access_token || (state == null || state !== storedState)) {
     console.log(data);
   });
 }
-
 */
+
 function battleFunc() {
     var text = document.getElementById("artist1").value;
     var text2 = document.getElementById("artist2").value;
@@ -35,22 +35,6 @@ function enterFunc() {
   }
 }
 
-//load and print artists.json (Run on server)
-function loadJSON() {
-  fetch("../artists(1).json")
-  .then(function(response){
-    return response.json();
-  })
-   .then(function(data){
-      let html = '';
-      data.forEach(function(artist){
-        html += `
-          <li>${artist.name}</li>
-        `;
-      });
-      document.getElementById("result").innerHTML = html;
-   })
-}
 /*
 function matchData(){
   fetch("../artists(1).json")
@@ -69,14 +53,16 @@ function matchData(){
 function makeArray() {
   $.getJSON('../artists(1).json', function (json) {
   var artists = [];
-  for (var key in json) {
-      if (json.hasOwnProperty(key)) {
-          var item = json[key];
+  for (var value in json) {
+      if (json.hasOwnProperty(value)) {
+          var item = json[value];
           artists.push({
               name: item.name
           });            
       }
   }
+    /*converts name from object to string, but shows data
+     as "[{"name":"Drake"},{"name":"Eminem"}, etc, etc..."*/
     var newArtists = JSON.stringify(artists);
     document.getElementById("result").innerHTML = newArtists;
   });
