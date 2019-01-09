@@ -77,5 +77,6 @@ function makeArray() {
           });            
       }
   }
+  document.getElementById("result").innerHTML = artists;
   });
 }
