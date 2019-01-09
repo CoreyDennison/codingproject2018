@@ -69,7 +69,6 @@ function matchData(){
 function makeArray() {
   $.getJSON('../artists(1).json', function (json) {
   var artists = [];
-  var artistsStr = JSON.stringify(artists);
   for (var key in json) {
       if (json.hasOwnProperty(key)) {
           var item = json[key];
@@ -78,6 +77,7 @@ function makeArray() {
           });            
       }
   }
-  document.getElementById("result").innerHTML = artistsStr;
+    var newArtists = JSON.stringify(artists);
+    document.getElementById("result").innerHTML = newArtists;
   });
 }
