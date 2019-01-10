@@ -41,4 +41,5 @@ function makeArray() {
     const artists = json.artists;  // could be written as const {artists} = json; either
     savedArtists = artists;
     document.getElementById("result").innerHTML = JSON.stringify(artists);
+  });
 }
