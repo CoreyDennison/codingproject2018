@@ -49,7 +49,7 @@ function matchData(){
    })
 }
 */
-var artists=null;
+var artists = [];
 //Create Javascript array from array in artists(1).json
 function makeArray() {
   //.getJSON is a JQuery method
@@ -77,5 +77,5 @@ function makeArray() {
 }
 
 function showArray(){
-  //document.getElementById("result").innerHTML = artists;
+  document.getElementById("result").innerHTML = artists;
 }
