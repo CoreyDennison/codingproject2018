@@ -75,5 +75,5 @@ function makeArray() {
 }
 
 function showArray(){
-  d artists;ocument.getElementById("result").innerHTML = artists;
+  document.getElementById("result").innerHTML = artists;
 }
