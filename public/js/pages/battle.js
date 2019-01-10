@@ -35,45 +35,6 @@ function enterFunc() {
   }
 }
 
-/*
-function matchData(){
-  fetch("../artists(1).json")
-  .then(function(response){
-    return response.json();
-  })
-   .then(function(data){
-    data.forEach(function(artist){
-      var getInfo1 = document.getElementById("artist1").value;
-    });
-    document.getElementById("info1").innerHTML = ;
-   })
-}
-*/
-//Create Javascript array from array in artists(1).json
-/*function makeArray() {
-  
-  //.getJSON is a JQuery method
-  $.getJSON('../artists(1).json', function (json) {
-  var artists = [];
-  for (var key in json) {
-      if (json.hasOwnProperty(key)) {
-          var item = json[key];
-          artists.push({
-              /*pushes each object with the key 'name' 
-              and its value in artists(1).json to 
-              JavaScript artists array 
-              name: item.name,
-              popularity: item.popularity,
-              followers: item.followers.total,
-              type: item.type,
-              genres: item.genres,
-              images: item.images
-          });            
-      }
-  }
-    var newArtists = JSON.stringify(artists);
-    document.getElementById("result").innerHTML = newArtists;
-  });*/
   let savedArtists = null;
   function makeArray() {
     $.getJSON('../artists.json', function (artists) {
@@ -81,4 +42,4 @@ function matchData(){
       savedArtists = artists;
       document.getElementById("result").innerHTML = JSON.stringify(artists);
     });
-  
+  }
