@@ -71,7 +71,8 @@ function makeArray() {
       }
   }
     for (var i = 0; i < artists.length; i++) {
-      document.getElementById("info1").innerHTML = artists;
+      var getInfo1 = document.getElementById("artist1").value;
+      document.getElementById("info1").innerHTML = artists[i].getInfo1;
     };
   });
 }
