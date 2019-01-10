@@ -49,7 +49,6 @@ function matchData(){
    })
 }
 */
-var artists = [];
 //Create Javascript array from array in artists(1).json
 function makeArray() {
   //.getJSON is a JQuery method
@@ -71,11 +70,9 @@ function makeArray() {
           });            
       }
   }
-    var newArtists = JSON.stringify(artists);
-    document.getElementById("result").innerHTML = newArtists;
+  for (var i = 0; i < artists.length; i++) {
+    var getInfo1 = document.getElementById("artist1").value;
+    document.getElementById("info1").innerHTML = artists[i].getInfo1;
+  };
   });
-}
-
-function showArray(){
-  document.getElementById("result").innerHTML = artists;
 }
