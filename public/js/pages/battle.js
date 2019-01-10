@@ -71,7 +71,9 @@ function makeArray() {
           });            
       }
   }
-    var newArtists = JSON.stringify(artists);
-    document.getElementById("result").innerHTML = newArtists;
   });
+}
+
+function showArray(){
+  d artists;ocument.getElementById("result").innerHTML = artists;
 }
