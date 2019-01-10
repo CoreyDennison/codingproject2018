@@ -49,10 +49,9 @@ function matchData(){
    })
 }
 */
+
 //Create Javascript array from array in artists(1).json
-function makeArray() {
-  //.getJSON is a JQuery method
-  $.getJSON('../artists(1).json', function (json) {
+$.getJSON('../artists(1).json', function (json) {
   var artists = [];
   for (var key in json) {
       if (json.hasOwnProperty(key)) {
@@ -69,8 +68,7 @@ function makeArray() {
               images: item.images
           });            
       }
-  }
-    var newArtists = JSON.stringify(artists);
-    document.getElementById("result").innerHTML = newArtists;
-  });
-}
+    }
+});
+
+document.getElementById("inputs").innerHTML = artists;
