@@ -38,8 +38,8 @@ function enterFunc() {
   let savedArtists = null;
   function makeArray() {
     $.getJSON('../artists.json', function (artists) {
-      const {artists} = json;  // could be written as const {artists} = json; either
-      savedArtists = artists;
-      document.getElementById("result").innerHTML = JSON.stringify(artists);
+      const newArtists = json.artists;  // could be written as const {artists} = json; either
+      savedArtists = newArtists;
+      document.getElementById("result").innerHTML = JSON.stringify(savedArtists);
     });
   }
