@@ -40,6 +40,6 @@ function enterFunc() {
     $.getJSON('../artists.json', function (artists) {
       const newArtists = json.artists;  // could be written as const {artists} = json; either
       savedArtists = newArtists;
-      document.getElementById("result").innerHTML = JSON.stringify(savedrtists);
+      document.getElementById("result").innerHTML = JSON.stringify(savedArtists);
     });
   }
