@@ -50,8 +50,8 @@ function matchData(){
 }
 */
 //Create Javascript array from array in artists(1).json
-function makeArray() {
-  /*
+/*function makeArray() {
+  
   //.getJSON is a JQuery method
   $.getJSON('../artists(1).json', function (json) {
   var artists = [];
@@ -81,4 +81,4 @@ function makeArray() {
       savedArtists = artists;
       document.getElementById("result").innerHTML = JSON.stringify(artists);
     });
-  }
+  
