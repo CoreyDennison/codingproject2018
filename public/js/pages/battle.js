@@ -38,7 +38,7 @@ function enterFunc() {
 //Create Javascript array from array in artists.json
 function makeArray() {
   $.getJSON('../artists.json', function (artists) {
-    const artists = json.artists;  // could be written as const {artists} = json; either
+    var artists = json.artists;  // could be written as const {artists} = json; either
     savedArtists = artists;
     document.getElementById("result").innerHTML = JSON.stringify(artists);
   });
