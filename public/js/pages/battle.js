@@ -51,6 +51,8 @@ function matchData(){
 */
 //Create Javascript array from array in artists(1).json
 function makeArray() {
+  /*
+  //.getJSON is a JQuery method
   $.getJSON('../artists(1).json', function (json) {
   var artists = [];
   for (var key in json) {
@@ -59,7 +61,7 @@ function makeArray() {
           artists.push({
               /*pushes each object with the key 'name' 
               and its value in artists(1).json to 
-              JavaScript artists array*/ 
+              JavaScript artists array 
               name: item.name,
               popularity: item.popularity,
               followers: item.followers.total,
@@ -71,5 +73,12 @@ function makeArray() {
   }
     var newArtists = JSON.stringify(artists);
     document.getElementById("result").innerHTML = newArtists;
-  });
-}
+  });*/
+  let savedArtists = null;
+  function makeArray() {
+    $.getJSON('../artists.json', function (artists) {
+      const artists = json.artists;  // could be written as const {artists} = json; either
+      savedArtists = artists;
+      document.getElementById("result").innerHTML = JSON.stringify(artists);
+    });
+  }
