@@ -19,14 +19,14 @@ if (!access_token || (state == null || state !== storedState)) {
   });
 }
 */
-document.getElementById("battleButton").addEventListener("click", function()){
+document.getElementById("battleButton").addEventListener("click", function(){
     var text = document.getElementById("artist1").value;
     var text2 = document.getElementById("artist2").value;
     document.getElementById("info1").innerHTML = text;
     document.getElementById("info2").innerHTML = text2;
     document.getElementById("artist1").value = "";
     document.getElementById("artist2").value = "";
-}
+});
 
 function enterFunc() {
   if (event.keyCode === 13) {
