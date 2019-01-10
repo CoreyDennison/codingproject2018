@@ -35,11 +35,10 @@ function enterFunc() {
   }
 }
 
-  let savedArtists = null;
-  function makeArray() {
-    $.getJSON('../artists.json', function (artists) {
-      const newArtists = json.artists;  // could be written as const {artists} = json; either
-      savedArtists = newArtists;
-      document.getElementById("result").innerHTML = JSON.stringify(savedArtists);
-    });
-  }
+//Create Javascript array from array in artists.json
+function makeArray() {
+  $.getJSON('../artists.json', function (artists) {
+    const artists = json.artists;  // could be written as const {artists} = json; either
+    savedArtists = artists;
+    document.getElementById("result").innerHTML = JSON.stringify(artists);
+}
