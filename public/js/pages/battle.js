@@ -49,9 +49,11 @@ function matchData(){
    })
 }
 */
-
+var artists=null;
 //Create Javascript array from array in artists(1).json
-$.getJSON('../artists(1).json', function (json) {
+function makeArray() {
+  //.getJSON is a JQuery method
+  $.getJSON('../artists(1).json', function (json) {
   var artists = [];
   for (var key in json) {
       if (json.hasOwnProperty(key)) {
@@ -68,7 +70,8 @@ $.getJSON('../artists(1).json', function (json) {
               images: item.images
           });            
       }
-    }
-});
-
-document.getElementById("inputs").innerHTML = artists;
+  }
+    var newArtists = JSON.stringify(artists);
+    document.getElementById("result").innerHTML = newArtists;
+  });
+}
