@@ -51,10 +51,12 @@ function makeArray() {
       var getInfo1 = document.getElementById("artist1").value;
       var getInfo2 = document.getElementById("artist2").value;
       if(artists[i].name === getInfo1){
-        document.getElementById("info1").innerHTML = artists[i];
+        var nameStr = JSON.stringify(artists[i].name)
+        document.getElementById("info1").innerHTML = nameStr;
       }
         else if(artists[i].name === getInfo2){
-          document.getElementById("info2").innerHTML = artists[i];
+          var nameStr = JSON.stringify(artists[i].name)
+          document.getElementById("info2").innerHTML = nameStr;
         }
     };
   });
