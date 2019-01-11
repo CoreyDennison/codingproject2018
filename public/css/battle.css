@@ -52,18 +52,19 @@ button {
 	right: 100px; 
 }
 
-#jsonBtn {
-	background-color: white;
-	padding:5px 10px;
+
+#img1 img {
+	width: 160px;
+	height: 120px;
 	position: absolute;
-	top: 350px;
-	left: 100px; 
+	top:200px;
+	left: 100px;
 }
 
-#result {
-	color: white;
-	font-size: 20px;
+#img2 img {
+	width: 160px;
+	height: 120px;
 	position: absolute;
-	top: 500px;
-	left: 100px;
+	top:200px;
+	right: 100px;
 }
