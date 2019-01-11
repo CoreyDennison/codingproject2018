@@ -56,10 +56,6 @@ function makeArray() {
         else if(artists[i].name === getInfo2){
           document.getElementById("info2").innerHTML = artists[i];
         }
-          else{
-            document.getElementById("info1").innerHTML = "Error";
-            document.getElementById("info2").innerHTML = "Error";
-          }
     };
   });
 }
