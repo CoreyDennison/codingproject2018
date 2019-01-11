@@ -51,22 +51,32 @@ function makeArray() {
     for (var i = 0; i < artists.length; i++) {
       var getInfo1 = document.getElementById("artist1").value;
       var getInfo2 = document.getElementById("artist2").value;
+      //if input of first bar is found in the array...
       if(artists[i].name === getInfo1){
-        var nameStr = JSON.stringify(artists[i].name)
-
+        //get and display artist's image
         var image1 = document.createElement("IMG");
         image1.setAttribute("src", artists[i].images.url);
         document.getElementById("img1").appendChild(image1);
-        document.getElementById("name1").innerHTML = nameStr;
+        //get and display artist's information
+        document.getElementById("name1").innerHTML = artist[i].name;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers.total;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
-
+        document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
       }
+      //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
-          var nameStr = JSON.stringify(artists[i].name)
-          document.getElementById("info2").innerHTML = nameStr;
-        }
+
+          var image2 = document.createElement("IMG");
+          image2.setAttribute("src", artists[i].images.url);
+          document.getElementById("img2").appendChild(image2);
+
+          document.getElementById("name2").innerHTML = artist[i].name;
+          document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
+          document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers.total;
+          document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
+          document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
+       }
     };
   });
 }
