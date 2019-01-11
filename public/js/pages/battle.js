@@ -66,12 +66,11 @@ function makeArray() {
       }
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
-
+          var nameStr = JSON.stringify(artists[i].name);
           var image2 = document.createElement("IMG");
           image2.setAttribute("src", artists[i].images.url);
           document.getElementById("img2").appendChild(image2);
-
-          document.getElementById("name2").innerHTML = artist[i].name;
+          document.getElementById("name2").innerHTML = nameStr;
           document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers.total;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
