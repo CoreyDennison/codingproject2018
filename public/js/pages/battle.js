@@ -55,7 +55,7 @@ function makeArray() {
         var nameStr = JSON.stringify(artists[i].name)
         var image1 = document.createElement("IMG");
         image1.setAttribute("src", artists[i].images.url);
-        document.getElementById("img1").appendChild(image1);
+        document.getElementById("img1").innerHTML(image1);
         document.getElementById("info1").innerHTML = nameStr;
 
       }
