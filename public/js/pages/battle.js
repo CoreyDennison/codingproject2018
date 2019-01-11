@@ -58,7 +58,7 @@ function makeArray() {
         image1.setAttribute("src", artists[i].images.url);
         document.getElementById("img1").appendChild(image1);
         document.getElementById("info1").innerHTML = nameStr + "\nPopularity: " + artists[i].popularity 
-          + "\nFollowers: " + artists[i].followers.total;
+          + "\nFollowers: " + artists[i].followers.total + "\nType: " + artists[i].type;
 
       }
         else if(artists[i].name === getInfo2){
