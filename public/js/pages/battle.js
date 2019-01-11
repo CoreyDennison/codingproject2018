@@ -27,7 +27,7 @@ function enterFunc() {
 }
 
 //Create Javascript array from array in artists(1).json
-function makeArray() {
+function makeAndSearch() {
   //.getJSON is a JQuery method
   $.getJSON('../artists(1).json', function (json) {
   var artists = [];
@@ -53,12 +53,13 @@ function makeArray() {
       var getInfo2 = document.getElementById("artist2").value;
       //if input of first bar is found in the array...
       if(artists[i].name === getInfo1){
+        var nameStr = JSON.stringify(artists[i].name)
         //get and display artist's image
         var image1 = document.createElement("IMG");
         image1.setAttribute("src", artists[i].images.url);
         document.getElementById("img1").appendChild(image1);
-        //get and display artist's information
-        document.getElementById("name1").innerHTML = artist[i].name;
+        //get and display artist's info
+        document.getElementById("name1").innerHTML = nameStr;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers.total;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
@@ -67,9 +68,11 @@ function makeArray() {
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
           var nameStr = JSON.stringify(artists[i].name);
+
           var image2 = document.createElement("IMG");
           image2.setAttribute("src", artists[i].images.url);
           document.getElementById("img2").appendChild(image2);
+
           document.getElementById("name2").innerHTML = nameStr;
           document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers.total;
