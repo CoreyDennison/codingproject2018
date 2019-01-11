@@ -53,10 +53,11 @@ function makeArray() {
       var getInfo2 = document.getElementById("artist2").value;
       if(artists[i].name === getInfo1){
         var nameStr = JSON.stringify(artists[i].name)
+
         var image1 = document.createElement("IMG");
         image1.setAttribute("src", artists[i].images.url);
-        document.getElementById("img1").innerHTML(image1);
-        document.getElementById("info1").innerHTML = nameStr;
+        document.getElementById("img1").appendChild(image1);
+        document.getElementById("info1").innerHTML = nameStr + "\nPopularity: " + artists[i].popularity;
 
       }
         else if(artists[i].name === getInfo2){
