@@ -57,8 +57,8 @@ function makeArray() {
           document.getElementById("info2").innerHTML = artists[i];
         }
           else{
-            document.getElementById("info1").innerHTML = " ";
-            document.getElementById("info2").innerHTML = " ";
+            document.getElementById("info1").innerHTML = "Error";
+            document.getElementById("info2").innerHTML = "Error";
           }
     };
   });
