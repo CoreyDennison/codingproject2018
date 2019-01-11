@@ -20,35 +20,12 @@ if (!access_token || (state == null || state !== storedState)) {
 }
 */
 
-function battleFunc() {
-    var text = document.getElementById("artist1").value;
-    var text2 = document.getElementById("artist2").value;
-    document.getElementById("info1").innerHTML = text;
-    document.getElementById("info2").innerHTML = text2;
-    document.getElementById("artist1").value = "";
-    document.getElementById("artist2").value = "";
-}
-
 function enterFunc() {
   if (event.keyCode === 13) {
     document.getElementById("battleButton").click();
   }
 }
 
-/*
-function matchData(){
-  fetch("../artists(1).json")
-  .then(function(response){
-    return response.json();
-  })
-   .then(function(data){
-    data.forEach(function(artist){
-      var getInfo1 = document.getElementById("artist1").value;
-    });
-    document.getElementById("info1").innerHTML = ;
-   })
-}
-*/
 //Create Javascript array from array in artists(1).json
 function makeArray() {
   //.getJSON is a JQuery method
@@ -72,9 +49,17 @@ function makeArray() {
   }
     for (var i = 0; i < artists.length; i++) {
       var getInfo1 = document.getElementById("artist1").value;
+      var getInfo2 = document.getElementById("artist2").value;
       if(artists[i].name === getInfo1){
         document.getElementById("info1").innerHTML = artists[i];
       }
+        else if(artists[i].name === getInfo2){
+          document.getElementById("info2").innerHTML = artists[i];
+        }
+          else{
+            document.getElementById("info1").innerHTML = " ";
+            document.getElementById("info2").innerHTML = " ";
+          }
     };
   });
 }
