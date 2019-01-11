@@ -61,7 +61,7 @@ function makeAndSearch() {
         //get and display artist's info
         document.getElementById("name1").innerHTML = nameStr;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
-        document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers.total;
+        //document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers.total;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
       }
@@ -74,7 +74,7 @@ function makeAndSearch() {
           document.getElementById("img2").appendChild(image2);
 
           document.getElementById("name2").innerHTML = nameStr;
-          document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
+          //document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers.total;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
