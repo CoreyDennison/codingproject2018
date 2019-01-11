@@ -94,6 +94,11 @@ function makeAndSearch() {
           const types2 = artists[i].type.length;
           const genres2 = artists[i].genres.length;
        }
+
+       var total1 = 0;
+       var total2 = 0;
+
+       //write if statements for tallying
     };
   });
 }
