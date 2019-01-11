@@ -53,31 +53,46 @@ function makeAndSearch() {
       var getInfo2 = document.getElementById("artist2").value;
       //if input of first bar is found in the array...
       if(artists[i].name === getInfo1){
-        var nameStr = JSON.stringify(artists[i].name)
-        //get and display artist's image
+        var nameStr1 = JSON.stringify(artists[i].name)
+        /*//get and display artist's image (error 404)
         var image1 = document.createElement("IMG");
         image1.setAttribute("src", artists[i].images.url);
         document.getElementById("img1").appendChild(image1);
+        */
         //get and display artist's info
-        document.getElementById("name1").innerHTML = nameStr;
+        document.getElementById("name1").innerHTML = nameStr1;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
-        //document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers.total;
+        
+        document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers.total;
+        
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
+        
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
+
+        //create variables of data for tallying purposes
+        const popular1 = artists[i].popularity;
+        const followers1 = artists[i].followers.total;
+        const types1 = artists[i].type.length;
+        const genres1 = artists[i].genres.length;
       }
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
-          var nameStr = JSON.stringify(artists[i].name);
-
+          var nameStr2 = JSON.stringify(artists[i].name);
+          /*
           var image2 = document.createElement("IMG");
           image2.setAttribute("src", artists[i].images.url);
           document.getElementById("img2").appendChild(image2);
-
-          document.getElementById("name2").innerHTML = nameStr;
-          //document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
+          */
+          document.getElementById("name2").innerHTML = nameStr2;
+          document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers.total;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
+
+          const popular2 = artists[i].popularity;
+          const followers2 = artists[i].followers.total;
+          const types2 = artists[i].type.length;
+          const genres2 = artists[i].genres.length;
        }
     };
   });
