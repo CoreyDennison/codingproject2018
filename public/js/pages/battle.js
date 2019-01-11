@@ -57,8 +57,10 @@ function makeArray() {
         var image1 = document.createElement("IMG");
         image1.setAttribute("src", artists[i].images.url);
         document.getElementById("img1").appendChild(image1);
-        document.getElementById("info1").innerHTML = nameStr + "\nPopularity: " + artists[i].popularity 
-          + "\nFollowers: " + artists[i].followers.total + "\nType: " + artists[i].type;
+        document.getElementById("name1").innerHTML = nameStr;
+        document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
+        document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers.total;
+        document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
 
       }
         else if(artists[i].name === getInfo2){
