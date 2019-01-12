@@ -65,12 +65,33 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-        document.getElementById("total1").innerHTML = "Total: " + total1;
+
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
         const followers1 = artists[i].followers;
         const types1 = artists[i].type.length;
         const genres1 = artists[i].genres.length;
+
+        var total1 = 0;
+
+        if(popular1 > popular2){
+          total1 ++;
+       }
+
+        else if(followers1 > followers2){
+         total1 ++;
+       }
+
+        else sif(types1 > types2){
+         total1 ++;
+       }
+
+        else if(genres1 > genres2){
+         total1 ++;
+       }
+
+        document.getElementById("total1").innerHTML = "Total: " + total1;
+
       }
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
@@ -91,46 +112,30 @@ function makeAndSearch() {
           const followers2 = artists[i].followers;
           const types2 = artists[i].type.length;
           const genres2 = artists[i].genres.length;
+
+          var total2 = 0;
+
+          if (popular2 > popular1){
+            total2++;
+          }
+
+           else if (followers2 > followers1){
+            total2++;
+           }
+
+           else if (types2 > types1){
+            total2++;
+           }
+
+          if(genres1 > genres2){
+            total1 ++;
+           }
+
+           else if (genres2 > genres1){
+            total2++;
+           }
+
        }
-
-       var total1 = 0;
-       var total2 = 0;
-
-       if(popular1 > popular2){
-        total1 ++;
-       }
-
-       else if (popular2 > popular1){
-        total2++;
-       }
-
-      if(followers1 > followers2){
-        total1 ++;
-       }
-
-       else if (followers2 > followers1){
-        total2++;
-       }
-
-      if(types1 > types2){
-        total1 ++;
-       }
-
-       else if (types2 > types1){
-        total2++;
-       }
-
-      if(genres1 > genres2){
-        total1 ++;
-       }
-
-       else if (genres2 > genres1){
-        total2++;
-       }
-
-
-
-       //write if statements for tallying
     };
   });
 }
