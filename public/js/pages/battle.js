@@ -55,7 +55,6 @@ function makeAndSearch() {
       if(artists[i].name === getInfo1){
         var nameStr1 = JSON.stringify(artists[i].name)
         //get and display artist's image (Several examples of "url", need to withdraw one)
-        Object.keys(artists[i].images)[1];
         var image1 = document.createElement("IMG");
         var imgStr1 = JSON.stringify(artists[i].images.url);
         image1.setAttribute("src", imgStr1);
@@ -67,7 +66,7 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-        document.getElementById("img1").innerHTML = "Image: " + Object.keys(artists[i].images)[0];
+        document.getElementById("img1").innerHTML = "Image: " + artists[Object.keys(artists[i].images)[1]];
 
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
