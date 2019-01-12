@@ -67,7 +67,7 @@ function makeAndSearch() {
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
 
-        const followers1 === artists[i].followers;
+        const followers1 = artists[i].followers;
       }
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
