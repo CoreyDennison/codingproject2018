@@ -54,7 +54,7 @@ function makeAndSearch() {
       //if input of first bar is found in the array...
       if(artists[i].name === getInfo1){
         var nameStr1 = JSON.stringify(artists[i].name)
-        /*//get and display artist's image (error 404)
+        /*//get and display artist's image (Several examples of "url", need to withdraw one)
         var image1 = document.createElement("IMG");
         var imgStr1 = JSON.stringify(artists[i].images.url);
         image1.setAttribute("src", imgStr1);
@@ -66,7 +66,7 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-        document.getElementById("img1").innerHTML = "Image: " + artists[i].images;
+        document.getElementById("img1").innerHTML = "Image: " + JSON.strigify(artists[i].images);
 
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
@@ -77,12 +77,12 @@ function makeAndSearch() {
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
           var nameStr2 = JSON.stringify(artists[i].name);
-    
+          /*
           var image2 = document.createElement("IMG");
           var imgStr2 = JSON.stringify(artists[i].images.url);
           image2.setAttribute("src", imgStr2);
           document.getElementById("img2").appendChild(image2);
-          
+          */
           document.getElementById("name2").innerHTML = nameStr2;
           document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
