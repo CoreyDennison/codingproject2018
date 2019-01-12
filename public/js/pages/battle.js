@@ -96,6 +96,10 @@ function makeAndSearch() {
           const genres2 = artists[i].genres.length;
        }
 
+       if(followers1 > followers2).innerHTML = "And the winner is..." + nameStr1;
+        document.getElementById("winner").
+       }
+
        var total1 = 0;
        var total2 = 0;
 
