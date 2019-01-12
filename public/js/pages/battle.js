@@ -93,8 +93,8 @@ function makeAndSearch() {
           const genres2 = artists[i].genres.length;
        }
 
-       var followers1_1 === followers1;
-       var followers2_1 === followers2;
+       var followers1_1 = followers1;
+       var followers2_1 = followers2;
 
        if (followers1_1 > followers2_1){
         document.getElementById("winner").innerHTML = "And the winner is... " + nameStr1;
