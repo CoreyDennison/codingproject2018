@@ -132,3 +132,19 @@ button {
 	top:170px;
 	right: 200px;
 }
+
+#total1 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 600px;
+	left: 100px; 
+}
+
+#total2 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 600px;
+	right: 100px; 
+}

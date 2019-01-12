@@ -65,7 +65,7 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-        document.getElementById("total").innerHTML = "Total: " + total1;
+        document.getElementById("total1").innerHTML = "Total: " + total1;
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
         const followers1 = artists[i].followers;
@@ -85,7 +85,7 @@ function makeAndSearch() {
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
-          document.getElementById("total").innerHTML = "Total: " + total2;
+          document.getElementById("total2").innerHTML = "Total: " + total2;
 
           const popular2 = artists[i].popularity;
           const followers2 = artists[i].followers;
