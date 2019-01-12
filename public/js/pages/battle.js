@@ -43,7 +43,7 @@ function makeAndSearch() {
               followers: item.followers.total,
               type: item.type,
               genres: item.genres,
-              images: item.images.url
+              images: item.images
           });            
       }
   }
