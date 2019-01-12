@@ -54,12 +54,12 @@ function makeAndSearch() {
       //if input of first bar is found in the array...
       if(artists[i].name === getInfo1){
         var nameStr1 = JSON.stringify(artists[i].name)
-        //get and display artist's image
+        /*//get and display artist's image
         var images1 = JSON.stringify(artists[i].images.url) 
         var image1 = document.createElement("IMG");
         image1.setAttribute("src", images1);
         document.getElementById("img1").appendChild(image1);
-        
+        */
         //get and display artist's info
         document.getElementById("name1").innerHTML = nameStr1;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
@@ -76,11 +76,11 @@ function makeAndSearch() {
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
           var nameStr2 = JSON.stringify(artists[i].name);
-          
+          /*
           var image2 = document.createElement("IMG");
           image2.setAttribute("src", artists[i].images.url);
           document.getElementById("img2").appendChild(image2);
-          
+          */
           document.getElementById("name2").innerHTML = nameStr2;
           document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
@@ -93,6 +93,21 @@ function makeAndSearch() {
           const genres2 = artists[i].genres.length;
        }
 
+       var followers1_1 === followers1;
+       var followers2_1 === followers2;
+
+       if (followers1_1 > followers2_1){
+        document.getElementById("winner").innerHTML = "And the winner is... " + nameStr1;
+       }
+
+       else if (followers1_1 < followers2_1){
+        document.getElementById("winner").innerHTML = "And the winner is... " + nameStr2;
+       }
+
+       else{
+        document.getElementById("winner").innerHTML = "It's a draw";
+       }
+        /*
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
         const followers1 = artists[i].followers;
@@ -140,7 +155,7 @@ function makeAndSearch() {
          }
 
         document.getElementById("total1").innerHTML = "Total: " + total1;
-        document.getElementById("total2").innerHTML = "Total: " + total2;
+        document.getElementById("total2").innerHTML = "Total: " + total2;*/
     };
   });
 }
