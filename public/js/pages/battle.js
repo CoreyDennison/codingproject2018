@@ -54,9 +54,10 @@ function makeAndSearch() {
       //if input of first bar is found in the array...
       if(artists[i].name === getInfo1){
         var nameStr1 = JSON.stringify(artists[i].name)
-        //get and display artist's image 
+        //get and display artist's image
+        var images1 = JSON.stringify(artists[i].images) 
         var image1 = document.createElement("IMG");
-        image1.setAttribute("src", artists[i].images);
+        image1.setAttribute("src", images1);
         document.getElementById("img1").appendChild(image1);
         
         //get and display artist's info
