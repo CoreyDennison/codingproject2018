@@ -92,43 +92,54 @@ function makeAndSearch() {
           const genres2 = artists[i].genres.length;
        }
 
-       var total1 = 0;
-       var total2 = 0;
+        //create variables of data for tallying purposes
+        const popular1 = artists[i].popularity;
+        const followers1 = artists[i].followers;
+        const types1 = artists[i].type.length;
+        const genres1 = artists[i].genres.length;
 
-       if(popular1 > popular2){
-        total1 ++;
-       }
+        const popular2 = artists[i].popularity;
+        const followers2 = artists[i].followers;
+        const types2 = artists[i].type.length;
+        const genres2 = artists[i].genres.length;
+        
+         var total1 = 0;
+         var total2 = 0;
 
-       else if (popular2 > popular1){
-        total2++;
-       }
+         if(popular1 > popular2){
+          total1 ++;
+         }
 
-      if(followers1 > followers2){
-        total1 ++;
-       }
+         else if (popular2 > popular1){
+          total2++;
+         }
 
-       else if (followers2 > followers1){
-        total2++;
-       }
+        if(followers1 > followers2){
+          total1 ++;
+         }
 
-      if(types1 > types2){
-        total1 ++;
-       }
+         else if (followers2 > followers1){
+          total2++;
+         }
 
-       else if (types2 > types1){
-        total2++;
-       }
+        if(types1 > types2){
+          total1 ++;
+         }
 
-      if(genres1 > genres2){
-        total1 ++;
-       }
+         else if (types2 > types1){
+          total2++;
+         }
 
-       else if (genres2 > genres1){
-        total2++;
-       }
+        if(genres1 > genres2){
+          total1 ++;
+         }
 
-      document.getElementById("total1").innerHTML = "Total: " + total1;
-      document.getElementById("total2").innerHTML = "Total: " + total2;
+         else if (genres2 > genres1){
+          total2++;
+         }
+
+        document.getElementById("total1").innerHTML = "Total: " + total1;
+        document.getElementById("total2").innerHTML = "Total: " + total2;
     };
   });
 }
