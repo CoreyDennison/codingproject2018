@@ -164,7 +164,7 @@ button {
 	font-size: 20px;
 	position: absolute;
 	top: 530px;
-	left: 800px;
+	left: 100px;
 }
 
 #result button {
@@ -172,5 +172,5 @@ button {
 	padding:5px 10px;
 	position: absolute;
 	top: 500px;
-	left: 540px; 
+	left: 140px; 
 }
