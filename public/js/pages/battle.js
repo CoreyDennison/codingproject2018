@@ -67,6 +67,7 @@ function makeAndSearch() {
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
 
+        const followers1 === artists[i].followers;
       }
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
@@ -80,9 +81,11 @@ function makeAndSearch() {
           document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
-          document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
+          document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;const followers1 === artists[i].followers;
+
+          const followers2 === artists[i].followers;
        }
-       
+
        //comparison code
        var followers1_1 = followers1;
        var followers2_1 = followers2;
