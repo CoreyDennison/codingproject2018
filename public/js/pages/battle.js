@@ -43,7 +43,7 @@ function makeAndSearch() {
               followers: item.followers.total,
               type: item.type,
               genres: item.genres,
-              images: item.images
+              images: item.images.url
           });            
       }
   }
@@ -66,7 +66,7 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-        document.getElementById("img1").innerHTML = "Image: " + artists[i].find(images.url);
+        document.getElementById("img1").innerHTML = "Image: " + artists[i].images;
 
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
@@ -88,7 +88,6 @@ function makeAndSearch() {
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
-
 
           const popular2 = artists[i].popularity;
           const followers2 = artists[i].followers;
