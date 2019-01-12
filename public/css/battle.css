@@ -4,7 +4,7 @@ body {
 
 #artist1 {
 	position: absolute;
-	top: 100px;
+	top: 50px;
 	left: 100px;
 	width: 250px;
 	height: 30px;
@@ -12,7 +12,7 @@ body {
 
 #artist2 {
 	position: absolute;
-	top: 100px;
+	top: 50px;
 	left: 800px;
 	width: 250px;
 	height: 30px;
@@ -24,7 +24,7 @@ body {
 	color: yellow;
 	text-shadow: 2px 2px #FF0000;
 	position: absolute;
-	top: 100px;
+	top: 50px;
 	left: 550px;
 }
 
@@ -32,7 +32,7 @@ button {
 	background-color: white;
 	padding:5px 10px;
 	position: absolute;
-	top: 170px;
+	top: 120px;
 	left: 540px; 
 }
 
@@ -40,7 +40,7 @@ button {
 	color: blue;
 	font-size: 30px;
 	position: absolute;
-	top: 300px;
+	top: 250px;
 	left: 100px; 
 }
 
@@ -48,7 +48,7 @@ button {
 	color: blue;
 	font-size: 30px;
 	position: absolute;
-	top: 300px;
+	top: 250px;
 	left: 800px; 
 }
 
@@ -56,7 +56,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 360px;
+	top: 310px;
 	left: 100px; 
 }
 
@@ -64,7 +64,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 360px;
+	top: 310px;
 	left: 800px;
 }
 
@@ -72,7 +72,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 395px;
+	top: 345px;
 	left: 100px; 
 }
 
@@ -80,7 +80,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 395px;
+	top: 345px;
 	left: 800px;
 }
 
@@ -88,7 +88,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 430px;
+	top: 380px;
 	left: 100px; 
 }
 
@@ -96,7 +96,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 430px;
+	top: 380px;
 	left: 800px; 
 }
 
@@ -104,7 +104,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 465px;
+	top: 415px;
 	left: 100px; 
 }
 
@@ -112,7 +112,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 465px;
+	top: 415px;
 	left: 800px;
 }
 
@@ -121,7 +121,7 @@ button {
 	width: 160px;
 	height: 120px;
 	position: absolute;
-	top:150px;
+	top:100px;
 	left: 100px;
 }
 
@@ -129,7 +129,7 @@ button {
 	width: 160px;
 	height: 120px;
 	position: absolute;
-	top:150px;
+	top:100px;
 	left: 800px;
 }
 
@@ -137,7 +137,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 600px;
+	top: 550px;
 	left: 100px; 
 }
 
@@ -145,7 +145,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 600px;
+	top: 550px;
 	left: 800px;
 }
 
@@ -155,6 +155,6 @@ button {
 	color: yellow;
 	text-shadow: 2px 2px #FF0000;
 	position: absolute;
-	top: 650px;
+	top: 600px;
 	left: 500px;
 }
