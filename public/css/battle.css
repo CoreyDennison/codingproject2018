@@ -148,3 +148,13 @@ button {
 	top: 600px;
 	right: 100px; 
 }
+
+#winner{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 30px;
+	color: yellow;
+	text-shadow: 2px 2px #FF0000;
+	position: absolute;
+	top: 600px;
+	left: 500px;
+}
