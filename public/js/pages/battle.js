@@ -82,7 +82,7 @@ function makeAndSearch() {
          total1 ++;
        }
 
-        else sif(types1 > types2){
+        else if(types1 > types2){
          total1 ++;
        }
 
