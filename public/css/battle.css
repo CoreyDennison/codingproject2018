@@ -158,3 +158,19 @@ button {
 	top: 550px;
 	left: 450px;
 }
+
+#result {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 530px;
+	left: 800px;
+}
+
+#result button {
+	background-color: white;
+	padding:5px 10px;
+	position: absolute;
+	top: 500px;
+	left: 540px; 
+}

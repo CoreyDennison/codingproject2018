@@ -62,17 +62,13 @@ function makeAndSearch() {
         //get and display artist's info
         document.getElementById("name1").innerHTML = nameStr1;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
-        
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
-        
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
-        
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
 
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
-        //followers is undefined, even though it is loaded into array
-        const followers1 = artists[i].followers.total;
+        const followers1 = artists[i].followers;
         const types1 = artists[i].type.length;
         const genres1 = artists[i].genres.length;
       }
@@ -91,7 +87,7 @@ function makeAndSearch() {
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
 
           const popular2 = artists[i].popularity;
-          const followers2 = artists[i].followers.total;
+          const followers2 = artists[i].followers;
           const types2 = artists[i].type.length;
           const genres2 = artists[i].genres.length;
        }
@@ -106,4 +102,31 @@ function makeAndSearch() {
        //write if statements for tallying
     };
   });
+}
+
+function showArray(){
+//Create Javascript array from array in artists(1).json
+ //.getJSON is a JQuery method
+ $.getJSON('../artists(1).json', function (json) {
+ var artists = [];
+ for (var key in json) {
+     if (json.hasOwnProperty(key)) {
+         var item = json[key];
+         artists.push({
+             /*pushes each object with the key 'name'
+             and its value in artists(1).json to
+             JavaScript artists array*/
+             name: item.name,
+             popularity: item.popularity,
+             followers: item.followers.total,
+             type: item.type,
+             genres: item.genres,
+             images: item.images
+         });
+     }
+ }
+   var newArtists = JSON.stringify(artists);
+   document.getElementById("result").innerHTML = newArtists;
+ });
+}
 }
