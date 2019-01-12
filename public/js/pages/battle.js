@@ -54,17 +54,19 @@ function makeAndSearch() {
       //if input of first bar is found in the array...
       if(artists[i].name === getInfo1){
         var nameStr1 = JSON.stringify(artists[i].name)
-        //get and display artist's image (error 404)
+        /*//get and display artist's image (error 404)
         var image1 = document.createElement("IMG");
-        image1.setAttribute("src", artists[i].images.url);
+        var imgStr1 = JSON.stringify(artists[i].images.url);
+        image1.setAttribute("src", imgStr1);
         document.getElementById("img1").appendChild(image1);
-        
+        */
         //get and display artist's info
         document.getElementById("name1").innerHTML = nameStr1;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
+        document.getElementById("img1").innerHTML = "Image: " + artists[i].images.url;
 
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
@@ -75,9 +77,10 @@ function makeAndSearch() {
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
           var nameStr2 = JSON.stringify(artists[i].name);
-          
+    
           var image2 = document.createElement("IMG");
-          image2.setAttribute("src", artists[i].images.url);
+          var imgStr2 = JSON.stringify(artists[i].images.url);
+          image2.setAttribute("src", imgStr2);
           document.getElementById("img2").appendChild(image2);
           
           document.getElementById("name2").innerHTML = nameStr2;
@@ -85,6 +88,7 @@ function makeAndSearch() {
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
+
 
           const popular2 = artists[i].popularity;
           const followers2 = artists[i].followers;
@@ -99,30 +103,3 @@ function makeAndSearch() {
     };
   });
 }
-
-function showArray(){
-//Create Javascript array from array in artists(1).json
- //.getJSON is a JQuery method
- $.getJSON('../artists(1).json', function (json) {
-   var artists = [];
-   for (var key in json) {
-       if (json.hasOwnProperty(key)) {
-           var item = json[key];
-           artists.push({
-               /*pushes each object with the key 'name'
-               and its value in artists(1).json to
-               JavaScript artists array*/
-               name: item.name,
-               popularity: item.popularity,
-               followers: item.followers.total,
-               type: item.type,
-               genres: item.genres,
-               images: item.images
-           });
-       }
-   }
-     var newArtists = JSON.stringify(artists);
-     document.getElementById("result").innerHTML = newArtists;
-   });
-  }
-
