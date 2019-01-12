@@ -62,16 +62,13 @@ function makeAndSearch() {
         //get and display artist's info
         document.getElementById("name1").innerHTML = nameStr1;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
-        
-        document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers.total;
-        
+        document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
-        
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-
+        document.getElementById("total").innerHTML = "Total: " + total1;
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
-        const followers1 = artists[i].followers.total;
+        const followers1 = artists[i].followers;
         const types1 = artists[i].type.length;
         const genres1 = artists[i].genres.length;
       }
@@ -85,18 +82,53 @@ function makeAndSearch() {
           */
           document.getElementById("name2").innerHTML = nameStr2;
           document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
-          document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers.total;
+          document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
+          document.getElementById("total").innerHTML = "Total: " + total2;
 
           const popular2 = artists[i].popularity;
-          const followers2 = artists[i].followers.total;
+          const followers2 = artists[i].followers;
           const types2 = artists[i].type.length;
           const genres2 = artists[i].genres.length;
        }
 
        var total1 = 0;
        var total2 = 0;
+
+       if(popular1 > popular2){
+        total1 ++;
+       }
+
+       else if (popular2 > popular1){
+        total2++;
+       }
+
+      if(followers1 > followers2){
+        total1 ++;
+       }
+
+       else if (followers2 > followers1){
+        total2++;
+       }
+
+      if(types1 > types2){
+        total1 ++;
+       }
+
+       else if (types2 > types1){
+        total2++;
+       }
+
+      if(genres1 > genres2){
+        total1 ++;
+       }
+
+       else if (genres2 > genres1){
+        total2++;
+       }
+
+
 
        //write if statements for tallying
     };
