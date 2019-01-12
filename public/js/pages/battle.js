@@ -93,48 +93,48 @@ function makeAndSearch() {
        }
 
         //create variables of data for tallying purposes
-        const popular1_1 === popular1;
-        const followers1_1 = followers1;
-        const types1_1 = types1;
-        const genres1_1 = genres1
+        const popular1 = artists[i].popularity;
+        const followers1 = artists[i].followers;
+        const types1 = artists[i].type.length;
+        const genres1 = artists[i].genres.length;
 
-        const popular2_1 = popular2;
-        const followers2_1 = followers2;
-        const types2_1 = types2;
-        const genres2_1 = genres2;
+        const popular2 = artists[i].popularity;
+        const followers2 = artists[i].followers;
+        const types2 = artists[i].type.length;
+        const genres2 = artists[i].genres.length;
 
          var total1 = 0;
          var total2 = 0;
 
-         if(popular1_1 > popular2_1){
+         if(popular1 > popular2){
           total1 ++;
          }
 
-         else if (popular2_1 > popular1_1){
+         else if (popular2 > popular1){
           total2++;
          }
 
-        else if(followers1_1 > followers2_1){
+        if(followers1 > followers2){
           total1 ++;
          }
 
-         else if (followers2_1 > followers1_1){
+         else if (followers2 > followers1){
           total2++;
          }
 
-        else if(types1_1 > types2_1){
+        if(types1 > types2){
           total1 ++;
          }
 
-         else if (types2_1 > types1_1){
+         else if (types2 > types1){
           total2++;
          }
 
-        else if(genres1_1 > genres2_1){
+        if(genres1 > genres2){
           total1 ++;
          }
 
-         else if (genres2_1 > genres1_1){
+         else if (genres2 > genres1){
           total2++;
          }
 
