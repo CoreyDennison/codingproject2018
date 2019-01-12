@@ -92,14 +92,10 @@ function makeAndSearch() {
           const genres2 = artists[i].genres.length;
        }
 
-       if(followers1 > followers2){
+       else if(followers1 > followers2){
         document.getElementById("winner").innerHTML = "And the winner is..." + nameStr1;
        }
 
-       var total1 = 0;
-       var total2 = 0;
-
-       //write if statements for tallying
     };
   });
 }
