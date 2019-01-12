@@ -55,11 +55,11 @@ function makeAndSearch() {
       if(artists[i].name === getInfo1){
         var nameStr1 = JSON.stringify(artists[i].name)
         //get and display artist's image (Several examples of "url", need to withdraw one)
-        var image1 = document.createElement("IMG");
-        var imgStr1 = JSON.stringify(artists[i].images.url);
+        /*
+        var image1 = document.createElement("IMG");;
         image1.setAttribute("src", imgStr1);
         document.getElementById("img1").appendChild(image1);
-        
+        */
         //get and display artist's info
         document.getElementById("name1").innerHTML = nameStr1;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
