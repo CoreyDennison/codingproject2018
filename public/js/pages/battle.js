@@ -43,7 +43,7 @@ function makeAndSearch() {
               followers: item.followers.total,
               type: item.type,
               genres: item.genres,
-              images: item.images
+              images: item.images.url,
           });            
       }
   }
@@ -56,7 +56,7 @@ function makeAndSearch() {
         var nameStr1 = JSON.stringify(artists[i].name)
         //get and display artist's image (error 404)
         var image1 = document.createElement("IMG");
-        image1.setAttribute("src", artists[i].images.url);
+        image1.setAttribute("src", artists[i].images);
         document.getElementById("img1").appendChild(image1);
         
         //get and display artist's info
