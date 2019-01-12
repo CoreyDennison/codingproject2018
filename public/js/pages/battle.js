@@ -54,20 +54,27 @@ function makeAndSearch() {
       //if input of first bar is found in the array...
       if(artists[i].name === getInfo1){
         var nameStr1 = JSON.stringify(artists[i].name)
-        /*//get and display artist's image
-        var images1 = JSON.stringify(artists[i].images.url) 
+        /*//get and display artist's image (error 404)
         var image1 = document.createElement("IMG");
-        image1.setAttribute("src", images1);
+        image1.setAttribute("src", artists[i].images.url);
         document.getElementById("img1").appendChild(image1);
         */
         //get and display artist's info
         document.getElementById("name1").innerHTML = nameStr1;
         document.getElementById("pop1").innerHTML = "Popularity: " + artists[i].popularity;
+        
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
+        
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
+        
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
 
-        const followers1 = artists[i].followers;
+        //create variables of data for tallying purposes
+        const popular1 = artists[i].popularity;
+        //followers is undefined, even though it is loaded into array
+        const followers1 = artists[i].followers.total;
+        const types1 = artists[i].type.length;
+        const genres1 = artists[i].genres.length;
       }
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
@@ -81,75 +88,18 @@ function makeAndSearch() {
           document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
-          document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;const followers1 === artists[i].followers;
+          document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
 
-          const followers2 === artists[i].followers;
+          const popular2 = artists[i].popularity;
+          const followers2 = artists[i].followers.total;
+          const types2 = artists[i].type.length;
+          const genres2 = artists[i].genres.length;
        }
 
-       //comparison code
-       var followers1_1 = followers1;
-       var followers2_1 = followers2;
+       var total1 = 0;
+       var total2 = 0;
 
-       if (followers1_1 > followers2_1){
-        document.getElementById("winner").innerHTML = "And the winner is... " + nameStr1;
-       }
-
-       else if (followers1_1 < followers2_1){
-        document.getElementById("winner").innerHTML = "And the winner is... " + nameStr2;
-       }
-
-       else{
-        document.getElementById("winner").innerHTML = "It's a draw";
-       }
-        /*
-        //create variables of data for tallying purposes
-        const popular1 = artists[i].popularity;
-        const followers1 = artists[i].followers;
-        const types1 = artists[i].type.length;
-        const genres1 = artists[i].genres.length;
-
-        const popular2 = artists[i].popularity;
-        const followers2 = artists[i].followers;
-        const types2 = artists[i].type.length;
-        const genres2 = artists[i].genres.length;
-
-         var total1 = 0;
-         var total2 = 0;
-
-         if(popular1 > popular2){
-          total1 ++;
-         }
-
-         else if (popular2 > popular1){
-          total2++;
-         }
-
-        if(followers1 > followers2){
-          total1 ++;
-         }
-
-         else if (followers2 > followers1){
-          total2++;
-         }
-
-        if(types1 > types2){
-          total1 ++;
-         }
-
-         else if (types2 > types1){
-          total2++;
-         }
-
-        if(genres1 > genres2){
-          total1 ++;
-         }
-
-         else if (genres2 > genres1){
-          total2++;
-         }
-
-        document.getElementById("total1").innerHTML = "Total: " + total1;
-        document.getElementById("total2").innerHTML = "Total: " + total2;*/
+       //write if statements for tallying
     };
   });
 }
