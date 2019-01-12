@@ -45,11 +45,11 @@ button {
 }
 
 #name2 {
-	color: white;
-	font-size: 20px;
+	color: blue;
+	font-size: 30px;
 	position: absolute;
-	top: 300px;
-	right: 100px; 
+	top: 360px;
+	left: 900px; 
 }
 
 #pop1 {
@@ -65,7 +65,7 @@ button {
 	font-size: 20px;
 	position: absolute;
 	top: 300px;
-	right: 100px; 
+	left: 900px;
 }
 
 #follow1 {
@@ -81,7 +81,7 @@ button {
 	font-size: 20px;
 	position: absolute;
 	top: 400px;
-	right: 100px; 
+	left: 900px;
 }
 
 #type1 {
@@ -97,14 +97,14 @@ button {
 	font-size: 20px;
 	position: absolute;
 	top: 450px;
-	right: 100px; 
+	left: 900px; 
 }
 
 #genre1 {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 470px;
+	top: 460px;
 	left: 100px; 
 }
 
@@ -113,7 +113,7 @@ button {
 	font-size: 20px;
 	position: absolute;
 	top: 40px;
-	right: 100px; 
+	left: 900px;
 }
 
 
@@ -130,7 +130,7 @@ button {
 	height: 120px;
 	position: absolute;
 	top:170px;
-	right: 200px;
+	left: 800px;
 }
 
 #total1 {
@@ -146,7 +146,7 @@ button {
 	font-size: 20px;
 	position: absolute;
 	top: 600px;
-	right: 100px; 
+	left: 900px;
 }
 
 #winner{
