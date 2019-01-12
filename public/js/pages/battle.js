@@ -129,4 +129,4 @@ function showArray(){
      document.getElementById("result").innerHTML = newArtists;
    });
   }
-}
+

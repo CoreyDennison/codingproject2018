@@ -163,7 +163,7 @@ button {
 	color: white;
 	font-size: 20px;
 	position: absolute;
-	top: 300px;
+	top: 200px;
 	left: 100px;
 }
 
@@ -171,6 +171,6 @@ button {
 	background-color: white;
 	padding:5px 10px;
 	position: absolute;
-	top: 350px;
+	top: 200px;
 	left: 100px; 
 }
