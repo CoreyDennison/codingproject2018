@@ -93,7 +93,7 @@ function makeAndSearch() {
        }
 
         //create variables of data for tallying purposes
-        const popular1_1 = popular1;
+        const popular1_1 === popular1;
         const followers1_1 = followers1;
         const types1_1 = types1;
         const genres1_1 = genres1
