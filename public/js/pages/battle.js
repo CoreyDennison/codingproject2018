@@ -65,7 +65,7 @@ function makeAndSearch() {
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
         //create variables of data for tallying purposes
-        const name1 = artists[i].name;
+        var name1_1 = artists[i].name;
         const popular1 = artists[i].popularity;
         var followers1 = artists[i].followers;
         const types1 = artists[i].type.length;
@@ -83,7 +83,7 @@ function makeAndSearch() {
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
 
-          const name2 = artists[i].name;
+          const name2_1 = artists[i].name;
           const popular2 = artists[i].popularity;
           var followers2 = artists[i].followers;
           const types2 = artists[i].type.length;
