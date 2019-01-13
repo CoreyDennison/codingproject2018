@@ -66,8 +66,7 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-        document.getElementById("img1").innerHTML = "Image: " + JSON.stringify(artists[i].images[0].url.replace(/"/g, ""));
-
+        document.getElementById("img1").innerHTML = "Image: " + artists[i].images[0].url;
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
         const followers1 = artists[i].followers;
