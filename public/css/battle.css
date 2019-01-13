@@ -29,6 +29,7 @@ body {
 }
 
 button {
+	font-family: 'Permanent Marker', cursive;
 	background-color: white;
 	padding:5px 10px;
 	position: absolute;
@@ -46,6 +47,7 @@ button {
 
 #name2 {
 	color: orange;
+	font-family: 'Permanent Marker', cursive;
 	font-size: 30px;
 	position: absolute;
 	top: 250px;
@@ -53,6 +55,7 @@ button {
 }
 
 #pop1 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -61,6 +64,7 @@ button {
 }
 
 #pop2 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -69,6 +73,7 @@ button {
 }
 
 #follow1 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -77,6 +82,7 @@ button {
 }
 
 #follow2 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -85,6 +91,7 @@ button {
 }
 
 #type1 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -93,6 +100,7 @@ button {
 }
 
 #type2 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -101,6 +109,7 @@ button {
 }
 
 #genre1 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -109,18 +118,12 @@ button {
 }
 
 #genre2 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
 	top: 415px;
 	left: 800px;
-}
-
-#img1 {
-	color: white;
-	font-size: 20px;
-	top:100px;
-	left: 100px;
 }
 
 #img1 img {
@@ -140,6 +143,7 @@ button {
 }
 
 #total1 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -148,6 +152,7 @@ button {
 }
 
 #total2 {
+	font-family: 'Permanent Marker', cursive;
 	color: white;
 	font-size: 20px;
 	position: absolute;
