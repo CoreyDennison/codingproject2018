@@ -1,3 +1,5 @@
+"use strict";
+
 /*import SpotifyAPI from "../api/spotify.js";
 import {getHashParams} from "../helpers/url.js";
 import {STATE_KEY} from "../helpers/constants.js";
