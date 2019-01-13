@@ -54,8 +54,7 @@ function makeAndSearch() {
       //if input of first bar is found in the array...
       if(artists[i].name === getInfo1){
         var nameStr1 = JSON.stringify(artists[i].name)
-        //get and display artist's image (Several examples of "url", need to withdraw one)
-        
+        //get and display artist's image
         var image1 = document.createElement('img')
         image1.setAttribute("src", artists[i].images[0].url)
         document.getElementById("img1").appendChild(image1);
@@ -75,12 +74,11 @@ function makeAndSearch() {
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
           var nameStr2 = JSON.stringify(artists[i].name);
-          /*
-          var image2 = document.createElement("IMG");
-          var imgStr2 = JSON.stringify(artists[i].images.url);
-          image2.setAttribute("src", imgStr2);
+          
+          var image2 = document.createElement("img");
+          image2.setAttribute("src", artists[i].images[0].url);
           document.getElementById("img2").appendChild(image2);
-          */
+          
           document.getElementById("name2").innerHTML = nameStr2;
           document.getElementById("pop2").innerHTML = "Popularity: " + artists[i].popularity;
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
