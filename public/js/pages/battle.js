@@ -64,7 +64,6 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-        document.getElementById("total1").innerHTML = "Total: " + total1;
         //create variables of data for tallying purposes
         var name1_1 = artists[i].name;
         var popular1 = artists[i].popularity;
@@ -83,7 +82,6 @@ function makeAndSearch() {
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
-          document.getElementById("total2").innerHTML = "Total: " + total2;
 
           var name2_1 = artists[i].name;
           var popular2 = artists[i].popularity;
@@ -135,6 +133,9 @@ function makeAndSearch() {
         else if(genres1_1 < genres2_1){
           total2++;
         }
+
+        document.getElementById("total1").innerHTML = "Total: " + total1;
+        document.getElementById("total2").innerHTML = "Total: " + total2;
 
         //Tally system
         if(total1 > total2){
