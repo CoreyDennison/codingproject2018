@@ -166,5 +166,7 @@ button {
 	font-size: 30px;
 	color: yellow;
 	text-shadow: 2px 2px #FF0000;
-	float: center;
+	position: absolute;
+	top: 580px;
+	left: 420px;
 }
