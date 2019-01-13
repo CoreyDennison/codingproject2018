@@ -57,7 +57,7 @@ function makeAndSearch() {
         //get and display artist's image (Several examples of "url", need to withdraw one)
         
         var image1 = document.createElement('img')
-        image1.setAttribute("src", "'" + JSON.stringify(artists[i].images[0].url) + "'")
+        image1.setAttribute("src", JSON.stringify(artists[i].images[0].url))
         document.getElementById("img1").innerHTML = image1
         
         //get and display artist's info
@@ -66,7 +66,7 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-        document.getElementById("img1").innerHTML = "Image: " + JSON.stringify(artists[i].images[0].url);
+        document.getElementById("img1").innerHTML = "Image: " + JSON.stringify(artists[i].images[0].url.substr(1).slice(0,-1));
 
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
@@ -93,10 +93,6 @@ function makeAndSearch() {
           const followers2 = artists[i].followers;
           const types2 = artists[i].type.length;
           const genres2 = artists[i].genres.length;
-       }
-
-       else if(followers1 > followers2){
-        document.getElementById("winner").innerHTML = "And the winner is..." + nameStr1;
        }
 
     };
