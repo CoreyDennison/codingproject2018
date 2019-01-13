@@ -57,7 +57,7 @@ function makeAndSearch() {
         //get and display artist's image (Several examples of "url", need to withdraw one)
         
         var image1 = document.createElement('img')
-        image1.setAttribute("src", JSON.stringify(artists[i].images[0].url))
+        image1.setAttribute("src", "'" + JSON.stringify(artists[i].images[0].url) + "'")
         document.getElementById("img1").innerHTML = image1
         
         //get and display artist's info
