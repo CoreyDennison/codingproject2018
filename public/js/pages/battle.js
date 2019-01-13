@@ -64,6 +64,7 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
+        document.getElementById("total1").innerHTML = "Total: " + total1;
         //create variables of data for tallying purposes
         var name1_1 = artists[i].name;
         var popular1 = artists[i].popularity;
@@ -82,6 +83,7 @@ function makeAndSearch() {
           document.getElementById("follow2").innerHTML = "Followers: " + artists[i].followers;
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
+          document.getElementById("total2").innerHTML = "Total: " + total2;
 
           var name2_1 = artists[i].name;
           var popular2 = artists[i].popularity;
@@ -89,7 +91,7 @@ function makeAndSearch() {
           var types2 = artists[i].type.length;
           var genres2 = artists[i].genres.length;
        }
-
+       //comparison code
         var popular1_1 = popular1;
         var popular2_1 = popular2;
         var followers1_1 = followers1;
@@ -134,9 +136,7 @@ function makeAndSearch() {
           total2++;
         }
 
-        document.getElementById("total1").innerHTML = "Total: " + total1;
-        document.getElementById("total2").innerHTML = "Total: " + total2;
-
+        //Tally system
         if(total1 > total2){
           document.getElementById("winner").innerHTML = "And the winner is... " + JSON.stringify(name1_1);
         }
