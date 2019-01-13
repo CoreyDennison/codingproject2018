@@ -58,7 +58,7 @@ function makeAndSearch() {
         
         var image1 = document.createElement('img')
         image1.setAttribute("src", JSON.stringify(artists[i].images[0].url))
-        document.getElementById("img1").innerHTML = image1
+        document.getElementById("img1").appendChild(image1);
         
         //get and display artist's info
         document.getElementById("name1").innerHTML = nameStr1;
@@ -66,7 +66,7 @@ function makeAndSearch() {
         document.getElementById("follow1").innerHTML = "Followers: " + artists[i].followers;
         document.getElementById("type1").innerHTML = "Type: " + artists[i].type;
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
-        document.getElementById("img1").innerHTML = "Image: " + JSON.stringify(artists[i].images[0].url.substr(0).slice(0,-1));
+        document.getElementById("img1").innerHTML = "Image: " + JSON.stringify(artists[i].images[0].url.replace(/['"]+/g, ''));
 
         //create variables of data for tallying purposes
         const popular1 = artists[i].popularity;
