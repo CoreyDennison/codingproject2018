@@ -66,10 +66,10 @@ function makeAndSearch() {
         document.getElementById("genre1").innerHTML = "Genres: " + artists[i].genres;
         //create variables of data for tallying purposes
         var name1_1 = artists[i].name;
-        const popular1 = artists[i].popularity;
+        var popular1 = artists[i].popularity;
         var followers1 = artists[i].followers;
-        const types1 = artists[i].type.length;
-        const genres1 = artists[i].genres.length;
+        var types1 = artists[i].type.length;
+        var genres1 = artists[i].genres.length;
       }
       //if input of second bar is found in the array...
         else if(artists[i].name === getInfo2){
@@ -83,17 +83,74 @@ function makeAndSearch() {
           document.getElementById("type2").innerHTML = "Type: " + artists[i].type;
           document.getElementById("genre2").innerHTML = "Genres: " + artists[i].genres;
 
-          const name2_1 = artists[i].name;
-          const popular2 = artists[i].popularity;
+          var name2_1 = artists[i].name;
+          var popular2 = artists[i].popularity;
           var followers2 = artists[i].followers;
-          const types2 = artists[i].type.length;
-          const genres2 = artists[i].genres.length;
+          var types2 = artists[i].type.length;
+          var genres2 = artists[i].genres.length;
        }
+
+        var popular1_1 = popular1;
+        var popular2_1 = popular2;
         var followers1_1 = followers1;
         var followers2_1 = followers2;
+        var types1_1 = types1;
+        var types2_1 = types2;
+        var genres1_1 = genres1;
+        var genres2_1 = genres2;
+
+        var total1 = 0;
+        var total2 = 0;
+
+        if(popular1_1 > popular2_1){
+          total1 ++;
+        }
+
+        else if(popular1_1 < popular2_1){
+          total2++;
+        }
 
         if(followers1_1 > followers2_1){
+          total1 ++;
+        }
+
+        else if(followers1_1 < followers2_1){
+          total2++;
+        }
+
+        if(types1_1 > types2_1){
+          total1 ++;
+        }
+
+        else if(types1_1 < types2_1){
+          total2++;
+        }
+
+        if(genres1_1 > genres2_1){
+          total1 ++;
+        }
+
+        else if(genres1_1 < genres2_1){
+          total2++;
+        }
+
+        document.getElementById("total1").innerHTML = "Total: " + total1;
+        document.getElementById("total2").innerHTML = "Total: " + total2;
+
+        if(total1 > total2){
           document.getElementById("winner").innerHTML = "And the winner is... " + JSON.stringify(name1_1);
+        }
+
+        else if (total1 < total2){
+          document.getElementById("winner").innerHTML = "And the winner is... " + JSON.stringify(name2_1);
+        }
+
+        else if (total1 === total2){
+          document.getElementById("winner").innerHTML = "It's a draw!";
+        }
+
+        else{
+          document.getElementById("winner").innerHTML = " ";
         }
     };
   });
