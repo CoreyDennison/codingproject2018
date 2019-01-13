@@ -93,7 +93,7 @@ function makeAndSearch() {
         var followers2_1 = followers2;
 
         if(followers1_1 > followers2_1){
-          document.getElementById("winner").innerHTML = "And the winner is... " + name1;
+          document.getElementById("winner").innerHTML = "And the winner is... " + JSON.stringify(name1_1);
         }
     };
   });
