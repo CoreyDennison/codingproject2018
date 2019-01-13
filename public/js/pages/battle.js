@@ -145,10 +145,6 @@ function makeAndSearch() {
           document.getElementById("winner").innerHTML = "And the winner is... " + JSON.stringify(name2_1);
         }
 
-        else if (total1 === total2){
-          document.getElementById("winner").innerHTML = "It's a draw!";
-        }
-
         else{
           document.getElementById("winner").innerHTML = " ";
         }
